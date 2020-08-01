@@ -1,8 +1,8 @@
 {
-  "name": "hello-express",
+  "name": "discord.js-komutsuz-altyapi",
   "version": "1.0.0",
   "main": "codare.js",
-  "description": "ExHaus Bot",
+  "description": "Codare-komutsuz-altyapi",
   "scripts": {
     "start": "node codare.js"
   },
