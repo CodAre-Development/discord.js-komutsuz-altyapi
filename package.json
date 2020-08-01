@@ -1,0 +1,23 @@
+{
+  "name": "hello-express",
+  "version": "1.0.0",
+  "main": "codare.js",
+  "description": "ExHaus Bot",
+  "scripts": {
+    "start": "node codare.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "discord.js": "^11.5.1",
+    "quick.db": "^7.1.1",
+    "chalk": "^4.0.0",
+    "moment": "^2.26.0"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "license": "MIT",
+  "keywords": [
+    "CodAre"
+  ]
+}
