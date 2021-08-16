@@ -31,14 +31,13 @@ client.on("message", message => {
 client.on("ready", () => {
   console.log(`Bütün komutlar yüklendi, bot çalıştırılıyor...`);
   console.log(`${client.user.username} ismi ile Discord hesabı aktifleştirildi!`);
-  client.user.setStatus(client.conf.durum);
   let mob;
   if(client.conf.durum == "online") mob = "Çevrimiçi";
   if(client.conf.durum == "offline") mob = "Çevrimdışı";
   if(client.conf.durum == "idle") mob = "Boşta";
   if(client.conf.durum == "dnd") mob = "Rahatsız Etmeyin";
   console.log(`Durum ayarlandı: ${mob}!`)
-  client.user.setActivity(client.conf.oynuyor);
+client.user.setPresence({ activity: { name: client.conf.oynuyor,type:2 }, status: client.conf.durum })
   console.log(`Oynuyor ayarlandı!`);
 })
 
